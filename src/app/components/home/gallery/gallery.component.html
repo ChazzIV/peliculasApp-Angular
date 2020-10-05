@@ -1,0 +1,52 @@
+<br>
+<h1>{{ titulohome }}</h1>
+<hr>
+
+<div class="row" *ngIf="peliculashome">
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-12 div-pic-1 puntero"
+           [routerLink]="['/pelicula', peliculashome[0].id , 'home']"
+           [ngStyle]="{ 'background-image':'url('+ ( peliculashome[0] | peliculaImagen ) +')' }">
+        <p class="pic-titulo">{{peliculashome[0].original_title}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 div-pic-2 puntero"
+           [routerLink]="['/pelicula', peliculashome[1].id , 'home']"
+           [ngStyle]="{ 'background-image':'url('+ ( peliculashome[1] | peliculaImagen ) +')' }">
+        <p class="pic-titulo">{{peliculashome[1].original_title}}</p>
+      </div>
+      <div class="col-sm-6 div-pic-2 puntero"
+           [routerLink]="['/pelicula', peliculashome[2].id , 'home']"
+           [ngStyle]="{ 'background-image':'url('+ ( peliculashome[2] | peliculaImagen ) +')' }">
+        <p class="pic-titulo">{{peliculashome[2].original_title}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-6 div-pic-2 puntero"
+           [routerLink]="['/pelicula', peliculashome[3].id , 'home']"
+           [ngStyle]="{ 'background-image':'url('+ ( peliculashome[3] | peliculaImagen ) +')' }">
+        <p class="pic-titulo">{{peliculashome[3].original_title}}</p>
+      </div>
+      <div class="col-sm-6 div-pic-2 puntero"
+           [routerLink]="['/pelicula', peliculashome[4].id , 'home']"
+           [ngStyle]="{ 'background-image':'url('+ ( peliculashome[4] | peliculaImagen ) +')' }">
+        <p class="pic-titulo">{{peliculashome[4].original_title}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 div-pic-1 puntero"
+           [routerLink]="['/pelicula', peliculashome[5].id , 'home']"
+           [ngStyle]="{ 'background-image':'url('+ ( peliculashome[5] | peliculaImagen ) +')' }">
+        <p class="pic-titulo">{{peliculashome[5].original_title}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

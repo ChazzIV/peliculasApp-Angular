@@ -1,0 +1,16 @@
+<br>
+<div style="text-align:left">
+  <h1>
+     {{titulo}}!
+  </h1>
+
+  <owl-carousel-o [options]="customOptions" >
+
+    <ng-template carouselSlide *ngFor="let pelicula of peliculas" >
+      <img [src]="'https://image.tmdb.org/t/p/w200/' + pelicula.poster_path" [alt]="pelicula.original_title"
+           class="puntero"
+           [routerLink]="['/pelicula', pelicula.id , 'home']">
+    </ng-template>
+
+  </owl-carousel-o>
+</div>

@@ -1,0 +1,13 @@
+<div class="pelicula-principal" [ngStyle]="{ 'background-image':'url('+ ( cartelera | peliculaImagen ) +')' }">>
+
+  <div class="contenedor">
+    <h3 class="titulo">{{cartelera.title}}</h3>
+    <p class="descripcion">
+      {{cartelera.overview|slice:0:200}}
+    </p>
+    <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+    <button role="button" class="boton" [routerLink]="['/pelicula', cartelera.id , 'home']">
+      <i class="fas fa-info-circle"></i>Más información
+    </button>
+  </div>
+</div>

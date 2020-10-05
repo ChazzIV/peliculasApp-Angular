@@ -1,0 +1,24 @@
+
+
+<app-slide></app-slide>
+
+<app-slides [peliculas]="cartelera" titulo="Peliculas en cartelera"></app-slides>
+
+
+<div class="container">
+
+  <!--<app-gallery  [peliculas]="cartelera|slice:0:6"  titulo="Peliculas en cartelera"></app-gallery>-->
+
+
+  <app-gallery  [peliculas]="populares|slice:0:6" titulo="Populares"></app-gallery>
+
+
+  <app-gallery  [peliculas]="popularesNinos|slice:0:6" titulo="Populares Entre los niños"></app-gallery>
+
+
+
+</div>
+
+
+
+
